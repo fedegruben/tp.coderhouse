@@ -1,0 +1,63 @@
+@use 'variables' as *;
+@use 'sass:map';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  &:focus,
+  &:hover{
+    box-shadow: none;
+    outline: none;
+    }
+}
+
+/* Movimiento del Logo del NavBar */
+.navbar-brand{
+    transition: transform 0.1s ease;
+    &:hover{
+        transform: rotate(-5deg) scale(1);
+    }
+    &:active{
+        transform: rotate(-5deg) scale(1.2);
+    }
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    a{
+        &:hover{
+        transform: scale(1.2);
+    }
+    }
+}
+
+/* Body Flex y min-height para que Footer esté abajo */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.btn{
+    width: 150px;
+}
+
+.btn-primary{
+    background-color: rgb(26, 150, 199);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(20, 112, 148);
+}

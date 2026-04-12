@@ -1,0 +1,39 @@
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "area6 area6 area3"
+    "area6 area6 area2"
+    "area4 area5 area1"
+    ;
+    gap: 10px;
+    margin: 20px;
+    max-width: 1320px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.contenedor-1{
+    grid-area: area1;
+}
+
+.contenedor-2{
+    grid-area: area2;
+}
+
+.contenedor-3{
+    grid-area: area3;
+}
+
+.contenedor-4{
+    grid-area: area4;
+}
+
+.contenedor-5{
+    grid-area: area5;
+}
+.contenedor-6{
+    grid-area: area6;
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Movimiento del Logo del NavBar */
+.navbar-brand {
+  transition: transform 0.1s ease;
+}
+.navbar-brand:hover {
+  transform: rotate(-5deg) scale(1);
+}
+.navbar-brand:active {
+  transform: rotate(-5deg) scale(1.2);
+}
+
+.redes {
+  display: flex;
+  gap: 15px;
+}
+.redes a:hover {
+  transform: scale(1.2);
+}
+
+/* Body Flex y min-height para que Footer esté abajo */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  width: 150px;
+}
+
+.btn-primary {
+  background-color: rgb(26, 150, 199);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(20, 112, 148);
+}
+
+header {
+  background-color: black;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.383);
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "area6 area6 area3" "area6 area6 area2" "area4 area5 area1";
+  gap: 10px;
+  margin: 20px;
+  max-width: 1320px;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedor-1 {
+  grid-area: area1;
+}
+
+.contenedor-2 {
+  grid-area: area2;
+}
+
+.contenedor-3 {
+  grid-area: area3;
+}
+
+.contenedor-4 {
+  grid-area: area4;
+}
+
+.contenedor-5 {
+  grid-area: area5;
+}
+
+.contenedor-6 {
+  grid-area: area6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  flex: 1;
+}
+
+main section div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section {
+  height: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 991px) {
+  .grilla {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "area6 area6 area3" "area6 area6 area2" "area4 area4 area5" "area4 area4 area1";
+  }
+  main {
+    height: 100%;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  .grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6";
+  }
+}/*# sourceMappingURL=style.css.map */
