@@ -1,20 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.navbar-toggler {
-  border: none;
-  box-shadow: none;
-}
-.navbar-toggler:focus, .navbar-toggler:hover {
-  box-shadow: none;
-  outline: none;
-}
-
 /* Movimiento del Logo del NavBar */
 .navbar-brand {
   transition: transform 0.1s ease;
@@ -122,6 +107,13 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 991px) {
@@ -140,5 +132,15 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6";
+  }
+  .dropdown-menu {
+    background-color: rgb(64, 64, 64);
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .dropdown-item:hover {
+    background-color: rgb(85, 85, 85);
+    color: rgb(232, 232, 232);
   }
 }/*# sourceMappingURL=style.css.map */

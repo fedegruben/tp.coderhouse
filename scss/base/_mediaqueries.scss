@@ -1,6 +1,4 @@
 @media (max-width: 991px){    
-
-
     .grilla{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
@@ -29,5 +27,17 @@
         "area5"
         "area6"
     ;
+    }
+    
+    .dropdown-menu{
+        background-color: rgb(64, 64, 64);
+    }
+
+    .dropdown-item{
+        color: white;
+        &:hover{
+            background-color: rgb(85, 85, 85);
+            color: rgb(232, 232, 232)
+        }
     }
 }

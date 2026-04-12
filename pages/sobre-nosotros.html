@@ -9,14 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
+        <!-- NavBar negro con logo con movimiento -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
-                                    <img src="../assets/img/NO-US.png" width="70" alt="logo">
+                                    <img src="assets/img/NO-US.png" width="70" alt="logo">
                                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,22 +25,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="#">Sobre Nosotros</a>
+                    <a class="nav-link" href="pages/sobre-nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="pages/galeria.html">Galería</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                        Nuestra música
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="pages/music.html">Action</a></li>
+                        <li><a class="dropdown-item" href="pages/music.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="pages/music.html">Something else here</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -47,11 +48,42 @@
             </div>
             </nav>
     </header>
+
+    
     <main>
         <p>Hola</p>
-    </main>
-    <footer>
         <p>Hola</p>
+        <p>Hola</p>
+    </main>
+
+    <!-- Contacto y Redes sociales -->
+    <footer>
+        <div>
+            <a href="pages/contacto.html">
+                Contactate con nosotros
+            </a>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/nousmusic_ofc" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24" aria-label="Instagram">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.25-2.38a1.13 1.13 0 1 1 0 2.25 1.13 1.13 0 0 1 0-2.25Z"/>
+                </svg>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=541152299440" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24" aria-label="WhatsApp">
+                    <path d="M12.04 2C6.55 2 2.1 6.45 2.1 11.94c0 1.76.46 3.48 1.34 5L2 22l5.24-1.38a9.9 9.9 0 0 0 4.8 1.22h.01c5.49 0 9.95-4.46 9.95-9.95S17.53 2 12.04 2Zm0 18.14h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.24 8.24 0 1 1 6.97 3.85Zm4.52-6.17c-.25-.13-1.46-.72-1.69-.8-.23-.08-.4-.13-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.13-1.07-.39-2.03-1.24-.75-.67-1.25-1.49-1.4-1.74-.15-.25-.02-.38.11-.5.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.13.17 1.77 2.71 4.29 3.8.6.26 1.07.41 1.43.52.6.19 1.14.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29Z"/>
+                </svg>
+            </a>
+            <a href="https://soundcloud.com/nous_music" target="_blank">
+                <svg fill="white" width="32" height="32" viewBox="0 0 24 24" class="text-profileTitleText"><title>SoundCloud</title><path d="M18.8842 11.5391C19.334 11.3627 19.8196 11.2968 20.3002 11.3472C20.7807 11.3976 21.2421 11.5628 21.6456 11.8287C22.049 12.0947 22.3826 12.4537 22.6183 12.8755C22.854 13.2973 22.9849 13.7695 23 14.2525C22.9976 15.037 22.6849 15.7887 22.1301 16.3434C21.5754 16.8982 20.8237 17.2109 20.0392 17.2133H11.8625C11.6792 17.1858 11.5325 17.03 11.5325 16.8558V7.5058C11.5325 7.32247 11.5875 7.2308 11.8075 7.1483C12.5605 6.85892 13.3703 6.74782 14.1734 6.82371C14.9765 6.8996 15.7511 7.16041 16.4366 7.58572C17.1221 8.01103 17.6998 8.58928 18.1244 9.27517C18.549 9.96105 18.8091 10.7359 18.8842 11.5391ZM1.12833 13.2258C1.12833 13.0241 1.3025 12.85 1.495 12.85C1.54467 12.8475 1.59433 12.8551 1.64095 12.8724C1.68758 12.8897 1.73019 12.9164 1.76621 12.9507C1.80222 12.985 1.83088 13.0262 1.85044 13.072C1.87001 13.1177 1.88006 13.1669 1.88 13.2166L1.99917 14.5275L1.88 15.8291C1.88 16.0308 1.69667 16.205 1.50417 16.205C1.40675 16.2028 1.31379 16.1637 1.24405 16.0956C1.1743 16.0276 1.13295 15.9356 1.12833 15.8383L1 14.5183L1.12833 13.2166V13.2258ZM3.0075 11.7133C2.80583 11.7133 2.63167 11.8966 2.63167 12.0891L2.50333 14.5275L2.63167 16.8375C2.63167 17.0391 2.80583 17.2041 2.99833 17.2041C3.20917 17.2041 3.38333 17.0391 3.38333 16.8375L3.51167 14.5275L3.38333 12.0891C3.38333 11.8966 3.2 11.7225 3.0075 11.7225V11.7133ZM4.135 12.6208C4.135 12.4191 4.31833 12.245 4.51083 12.245C4.7125 12.245 4.88667 12.4283 4.88667 12.6208L5.015 14.5275L4.88667 16.8375C4.88667 17.0391 4.70333 17.2041 4.51083 17.2041C4.41342 17.2019 4.32046 17.1629 4.25071 17.0948C4.18097 17.0268 4.13962 16.9348 4.135 16.8375L4.00667 14.5275L4.135 12.6208ZM6.01417 10.21C5.8125 10.21 5.6475 10.3933 5.6475 10.5858L5.51 14.5275L5.63833 16.8375C5.63833 17.03 5.82167 17.2041 6.01417 17.2041C6.21583 17.2041 6.39 17.03 6.39 16.8375L6.51833 14.5275L6.39 10.5858C6.39 10.3841 6.21583 10.2191 6.02333 10.2191L6.01417 10.21ZM7.15083 9.60497C7.15083 9.41247 7.325 9.2383 7.5175 9.2383C7.72833 9.2383 7.9025 9.41247 7.9025 9.60497L8.02167 14.5275L7.9025 16.8375C7.9025 17.03 7.71917 17.2041 7.52667 17.2041C7.42925 17.2019 7.33629 17.1629 7.26655 17.0948C7.1968 17.0268 7.15545 16.9348 7.15083 16.8375L7.0225 14.5275L7.15083 9.60497ZM9.03 9.7608C8.82833 9.7608 8.65417 9.94414 8.65417 10.1366L8.52583 14.5275L8.65417 16.8375C8.65417 17.0391 8.82833 17.2041 9.02083 17.2041C9.23167 17.2041 9.40583 17.0391 9.40583 16.8375L9.525 14.5275L9.40583 10.1366C9.40709 10.0869 9.39823 10.0375 9.37979 9.99134C9.36135 9.94517 9.33371 9.90323 9.29856 9.86808C9.2634 9.83293 9.22147 9.80529 9.1753 9.78685C9.12913 9.76841 9.0797 9.75954 9.03 9.7608ZM10.1575 8.6058C10.1575 8.40414 10.3317 8.22997 10.5242 8.22997C10.735 8.22997 10.9092 8.4133 10.9092 8.6058L11.0375 14.5275L10.9092 16.8375C10.9092 17.0391 10.7258 17.2041 10.5333 17.2041C10.4359 17.2019 10.343 17.1629 10.2732 17.0948C10.2035 17.0268 10.1621 16.9348 10.1575 16.8375L10.0292 14.5275L10.1575 8.6058Z"></path></svg>
+            </a>
+            <a href="https://open.spotify.com/intl-es/artist/6bOo7M2iCs5EKOWnYa5rcU?si=9qBPLFxXSUejSzbTSHrIbg&nd=1&dlsi=5dc121ed974b484a" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24" aria-label="Spotify">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.59 14.43a.62.62 0 0 1-.86.2 9.92 9.92 0 0 0-8.57-1.09.62.62 0 1 1-.37-1.18 11.16 11.16 0 0 1 9.64 1.22.62.62 0 0 1 .16.85Zm1.23-2.73a.77.77 0 0 1-1.06.26 12.3 12.3 0 0 0-10.22-1.25.77.77 0 0 1-.49-1.46 13.83 13.83 0 0 1 11.52 1.42.77.77 0 0 1 .25 1.03Zm.1-2.84A14.72 14.72 0 0 0 5.65 9.23a.92.92 0 0 1-.57-1.75 16.55 16.55 0 0 1 13.81 1.84.92.92 0 1 1-.97 1.54Z"/>
+                </svg>
+            </a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+</html>
