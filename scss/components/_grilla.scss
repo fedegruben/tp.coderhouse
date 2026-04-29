@@ -3,12 +3,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
     grid-template-areas: 
-    "area6 area6 area3"
-    "area6 area6 area2"
-    "area4 area5 area1"
+    "area1 area1 area3"
+    "area1 area1 area2"
+    "area4 area5 area6"
     ;
     gap: 10px;
-    margin: 20px;
+    margin: 20px auto;
     max-width: 1320px;
     justify-content: center;
     align-content: center;

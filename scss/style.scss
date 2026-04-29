@@ -1,6 +1,9 @@
 @use 'base/generales';
+@use 'base/variables';
 @use 'sections/header';
-@use 'components/grilla';
 @use 'sections/main';
 @use 'sections/footer';
+@use 'components/grilla';
+@use 'base/tipografia';
+
 @use 'base/mediaqueries';
