@@ -28,6 +28,16 @@
     }
 }
 
+.imagen-princ{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-princ img{
+    width: 500px;
+    max-width: 100%;
+}
+
 /* Body Flex y min-height para que Footer esté abajo */
 body{
     min-height: 100vh;

@@ -19,6 +19,16 @@
   transform: scale(1.2);
 }
 
+.imagen-princ {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-princ img {
+  width: 500px;
+  max-width: 100%;
+}
+
 /* Body Flex y min-height para que Footer esté abajo */
 body {
   min-height: 100vh;
@@ -63,7 +73,6 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
   background-color: black;
   flex: 1;
@@ -106,6 +115,14 @@ footer a {
   max-width: 1320px;
   justify-content: center;
   align-content: center;
+}
+
+.grilla img {
+  transition: transform 0.3s ease;
+}
+
+.grilla img:hover {
+  transform: scale(1.05);
 }
 
 .contenedor-1 {

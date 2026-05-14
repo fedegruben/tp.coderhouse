@@ -14,6 +14,14 @@
     align-content: center;
 }
 
+.grilla img{
+    transition: transform 0.3s ease;
+}
+
+.grilla img:hover{
+    transform: scale(1.05);
+}
+
 
 .contenedor-1{
     grid-area: area1;
