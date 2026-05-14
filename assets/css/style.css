@@ -64,6 +64,10 @@ body {
   border: none;
 }
 
+.contacto {
+  display: flex;
+}
+
 header {
   background-color: black;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.383);
@@ -88,6 +92,7 @@ main section div img {
 
 main section {
   height: 100%;
+  margin-bottom: 40px;
 }
 
 footer {
