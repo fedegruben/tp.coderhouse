@@ -1,10 +1,11 @@
+@use 'variables' as *;
 
 /* Disposición del main y e imágenes en Section. */
 main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: black;
+    background-color: $color-fondo;
     flex: 1;
     padding-top: 20px;
 }

@@ -166,18 +166,18 @@ footer a {
 /* Parámetros de los títulos y párrafos. */
 h1 {
   display: flex;
-  font-size: 50px;
-  text-align: center;
   justify-content: center;
   align-content: center;
+  text-items: center;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 25px;
   display: flex;
   justify-content: center;
   align-content: center;
-  text-align: center;
+  text-items: center;
+  font-size: 25px;
 }
 
 h3 {
@@ -186,7 +186,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-content: center;
-  text-align: center;
+  text-items: center;
 }
 
 p {

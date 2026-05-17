@@ -20,7 +20,7 @@
 /* Pequeño efecto en los logos de las redes sociales */
 .redes{
     display: flex;
-    gap: 15px;
+    gap: $gap-redes;
     a{
         &:hover{
         transform: scale(1.2);
