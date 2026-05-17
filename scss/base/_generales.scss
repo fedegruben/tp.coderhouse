@@ -17,7 +17,7 @@
     }
 }
 
-
+/* Pequeño efecto en los logos de las redes sociales */
 .redes{
     display: flex;
     gap: 15px;
@@ -28,6 +28,7 @@
     }
 }
 
+/* Ubicación y tamaño de la imagen en sobre-nosotros.html */
 .imagen-princ{
     display: flex;
     justify-content: center;
@@ -47,20 +48,7 @@ body{
     color: $color;
 }
 
-
-.btn{
-    width: 150px;
-}
-
-.btn-primary{
-    background-color: rgb(26, 150, 199);
-    border: none;
-}
-
-.btn-primary:hover{
-    background-color: rgb(20, 112, 148);
-}
-
+/* Tamaño y ubicación del video de index.html */
 .video {
     width: 100%;
     max-width: 560px;

@@ -11,6 +11,7 @@
   transform: rotate(-5deg) scale(1.2);
 }
 
+/* Pequeño efecto en los logos de las redes sociales */
 .redes {
   display: flex;
   gap: 15px;
@@ -19,6 +20,7 @@
   transform: scale(1.2);
 }
 
+/* Ubicación y tamaño de la imagen en sobre-nosotros.html */
 .imagen-princ {
   display: flex;
   justify-content: center;
@@ -38,19 +40,7 @@ body {
   color: white;
 }
 
-.btn {
-  width: 150px;
-}
-
-.btn-primary {
-  background-color: rgb(26, 150, 199);
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: rgb(20, 112, 148);
-}
-
+/* Tamaño y ubicación del video de index.html */
 .video {
   width: 100%;
   max-width: 560px;
@@ -92,6 +82,7 @@ header {
   padding: 26px;
 }
 
+/* Disposición del main y e imágenes en Section. */
 main {
   display: flex;
   flex-direction: column;
@@ -172,6 +163,7 @@ footer a {
   grid-area: area6;
 }
 
+/* Parámetros de los títulos y párrafos. */
 h1 {
   display: flex;
   font-size: 50px;
@@ -188,7 +180,8 @@ h2 {
   text-align: center;
 }
 
-h6 {
+h3 {
+  font-size: 20px;
   text-decoration: underline;
   display: flex;
   justify-content: center;
@@ -211,18 +204,14 @@ p {
     padding: 30px 0;
     flex: 1;
   }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 20px;
-  }
 }
+/* Reducción del video en otros dispositivos. */
 @media (max-width: 600px) {
   .video {
     max-width: 80%;
   }
 }
+/* Acomodo del menú, imagenes y redes sociales a formato celular. */
 @media (max-width: 576px) {
   .grilla {
     grid-template-columns: 1fr;
