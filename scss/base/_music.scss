@@ -1,5 +1,5 @@
 .plataformas{
-    display: flex;
+    @extend %flex-centrado;
     justify-content: space-around;
 }
 

@@ -30,8 +30,7 @@
 
 /* Ubicación y tamaño de la imagen en sobre-nosotros.html */
 .imagen-princ{
-    display: flex;
-    justify-content: center;
+    @extend %flex-centrado;
 }
 
 .imagen-princ img{
@@ -60,4 +59,10 @@ body{
     width: 100%;
     height: 100%;
     border: none;
+}
+
+%flex-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

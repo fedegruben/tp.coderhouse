@@ -1,5 +1,6 @@
 .contacto{
-    display: flex;
+    @extend %flex-centrado;
+    justify-content: flex-start;
 }
 
 .contacto form{
